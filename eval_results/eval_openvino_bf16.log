@@ -1,0 +1,34 @@
+182 images, 78970 labelled heads
+Loading dmcount-SHA@1000+openvino-bf16...
+dmcount-SHA@1000+openvino-bf16: 20/182 images (0.56s on the last)
+dmcount-SHA@1000+openvino-bf16: 40/182 images (0.62s on the last)
+dmcount-SHA@1000+openvino-bf16: 60/182 images (0.47s on the last)
+dmcount-SHA@1000+openvino-bf16: 80/182 images (0.58s on the last)
+dmcount-SHA@1000+openvino-bf16: 100/182 images (0.35s on the last)
+dmcount-SHA@1000+openvino-bf16: 120/182 images (0.27s on the last)
+dmcount-SHA@1000+openvino-bf16: 140/182 images (0.65s on the last)
+dmcount-SHA@1000+openvino-bf16: 160/182 images (0.16s on the last)
+dmcount-SHA@1000+openvino-bf16: 180/182 images (0.64s on the last)
+dmcount-SHA@1000+openvino-bf16: 182/182 images (0.56s on the last)
+Loading dmcount-SHA@native+openvino-bf16...
+dmcount-SHA@native+openvino-bf16: 20/182 images (0.58s on the last)
+dmcount-SHA@native+openvino-bf16: 40/182 images (0.66s on the last)
+dmcount-SHA@native+openvino-bf16: 60/182 images (0.46s on the last)
+dmcount-SHA@native+openvino-bf16: 80/182 images (0.57s on the last)
+dmcount-SHA@native+openvino-bf16: 100/182 images (0.34s on the last)
+dmcount-SHA@native+openvino-bf16: 120/182 images (0.27s on the last)
+dmcount-SHA@native+openvino-bf16: 140/182 images (0.64s on the last)
+dmcount-SHA@native+openvino-bf16: 160/182 images (0.19s on the last)
+dmcount-SHA@native+openvino-bf16: 180/182 images (0.67s on the last)
+dmcount-SHA@native+openvino-bf16: 182/182 images (0.61s on the last)
+
+| Config | MAE (95% interval) | RMSE | Bias | Median s/image |
+|---|---:|---:|---:|---:|
+| dmcount-SHA@1000+openvino-bf16 | 67.2 (54.8-81.5) | 113.8 | -13.8 | 0.49 |
+| dmcount-SHA@native+openvino-bf16 | 61.5 (50.4-73.8) | 98.7 | -3.7 | 0.52 |
+
+Check these by eye:
+dmcount-SHA@1000+openvino-bf16: worst: IMG_8.jpg truth 1326 got 723, IMG_165.jpg truth 1581 got 995, IMG_92.jpg truth 1366 got 1804
+dmcount-SHA@native+openvino-bf16: worst: IMG_8.jpg truth 1326 got 837, IMG_165.jpg truth 1581 got 1197, IMG_122.jpg truth 1153 got 784
+
+Per-image results: eval_results\shanghaitech_A_test.csv

@@ -1,0 +1,12 @@
+{
+  "notes": "For test_media/cctv_walk.mp4 (1280x720 street CCTV, see README 'Flow'). Zones and the line are at head height: heads of people on this pavement pass y=200-300 while they are fully in view (a line at y=360 was only reached as people left the frame). The line reaches the shop front (x=1080) because people walk close to it; stopping at x=1000 missed them. The line is drawn left to right, so its first direction (forward) is moving down the image, towards the camera.",
+  "frame_size": [1280, 720],
+  "zones": [
+    {"name": "Street", "polygon": [[0, 60], [560, 60], [420, 700], [0, 700]]},
+    {"name": "Pavement", "polygon": [[560, 60], [1060, 60], [1060, 700], [420, 700]]}
+  ],
+  "lines": [
+    {"name": "Pavement line", "points": [[480, 250], [1080, 250]],
+     "directions": ["towards camera", "away from camera"]}
+  ]
+}

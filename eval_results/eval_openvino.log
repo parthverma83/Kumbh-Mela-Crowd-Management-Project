@@ -1,0 +1,60 @@
+182 images, 78970 labelled heads
+Loading dmcount-SHA@1000+openvino...
+dmcount-SHA@1000+openvino: 20/182 images (1.12s on the last)
+dmcount-SHA@1000+openvino: 40/182 images (1.27s on the last)
+dmcount-SHA@1000+openvino: 60/182 images (0.88s on the last)
+dmcount-SHA@1000+openvino: 80/182 images (1.03s on the last)
+dmcount-SHA@1000+openvino: 100/182 images (0.66s on the last)
+dmcount-SHA@1000+openvino: 120/182 images (0.48s on the last)
+dmcount-SHA@1000+openvino: 140/182 images (1.31s on the last)
+dmcount-SHA@1000+openvino: 160/182 images (0.30s on the last)
+dmcount-SHA@1000+openvino: 180/182 images (1.24s on the last)
+dmcount-SHA@1000+openvino: 182/182 images (1.33s on the last)
+Loading dmcount-SHA@native+openvino...
+dmcount-SHA@native+openvino: 20/182 images (1.11s on the last)
+dmcount-SHA@native+openvino: 40/182 images (1.23s on the last)
+dmcount-SHA@native+openvino: 60/182 images (0.87s on the last)
+dmcount-SHA@native+openvino: 80/182 images (1.24s on the last)
+dmcount-SHA@native+openvino: 100/182 images (0.63s on the last)
+dmcount-SHA@native+openvino: 120/182 images (0.53s on the last)
+dmcount-SHA@native+openvino: 140/182 images (1.43s on the last)
+dmcount-SHA@native+openvino: 160/182 images (0.34s on the last)
+dmcount-SHA@native+openvino: 180/182 images (1.34s on the last)
+dmcount-SHA@native+openvino: 182/182 images (1.21s on the last)
+Loading csrnet-SHA@1000+openvino...
+csrnet-SHA@1000+openvino: 20/182 images (1.19s on the last)
+csrnet-SHA@1000+openvino: 40/182 images (1.36s on the last)
+csrnet-SHA@1000+openvino: 60/182 images (0.95s on the last)
+csrnet-SHA@1000+openvino: 80/182 images (1.18s on the last)
+csrnet-SHA@1000+openvino: 100/182 images (0.68s on the last)
+csrnet-SHA@1000+openvino: 120/182 images (0.47s on the last)
+csrnet-SHA@1000+openvino: 140/182 images (1.21s on the last)
+csrnet-SHA@1000+openvino: 160/182 images (0.30s on the last)
+csrnet-SHA@1000+openvino: 180/182 images (1.17s on the last)
+csrnet-SHA@1000+openvino: 182/182 images (1.07s on the last)
+Loading csrnet-SHA@native+openvino...
+csrnet-SHA@native+openvino: 20/182 images (1.11s on the last)
+csrnet-SHA@native+openvino: 40/182 images (1.28s on the last)
+csrnet-SHA@native+openvino: 60/182 images (0.89s on the last)
+csrnet-SHA@native+openvino: 80/182 images (1.13s on the last)
+csrnet-SHA@native+openvino: 100/182 images (0.61s on the last)
+csrnet-SHA@native+openvino: 120/182 images (0.49s on the last)
+csrnet-SHA@native+openvino: 140/182 images (1.22s on the last)
+csrnet-SHA@native+openvino: 160/182 images (0.28s on the last)
+csrnet-SHA@native+openvino: 180/182 images (1.25s on the last)
+csrnet-SHA@native+openvino: 182/182 images (1.13s on the last)
+
+| Config | MAE (95% interval) | RMSE | Bias | Median s/image |
+|---|---:|---:|---:|---:|
+| dmcount-SHA@1000+openvino | 67.3 (54.9-81.7) | 114.0 | -14.7 | 0.96 |
+| dmcount-SHA@native+openvino | 61.6 (50.4-73.8) | 98.8 | -4.6 | 1.04 |
+| csrnet-SHA@1000+openvino | 76.5 (62.7-91.9) | 124.2 | -5.4 | 1.00 |
+| csrnet-SHA@native+openvino | 74.3 (62.4-87.3) | 111.8 | +6.1 | 0.95 |
+
+Check these by eye:
+dmcount-SHA@1000+openvino: worst: IMG_8.jpg truth 1326 got 722, IMG_165.jpg truth 1581 got 992, IMG_92.jpg truth 1366 got 1802
+dmcount-SHA@native+openvino: worst: IMG_8.jpg truth 1326 got 836, IMG_165.jpg truth 1581 got 1194, IMG_122.jpg truth 1153 got 783
+csrnet-SHA@1000+openvino: worst: IMG_8.jpg truth 1326 got 683, IMG_165.jpg truth 1581 got 955, IMG_36.jpg truth 1267 got 809
+csrnet-SHA@native+openvino: worst: IMG_8.jpg truth 1326 got 811, IMG_104.jpg truth 1175 got 1597, IMG_165.jpg truth 1581 got 1216
+
+Per-image results: eval_results\shanghaitech_A_test.csv

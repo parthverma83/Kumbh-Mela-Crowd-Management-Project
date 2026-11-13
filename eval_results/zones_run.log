@@ -1,0 +1,38 @@
+Loading dmcount detector...
+Backend: openvino (f32)
+Inference: background thread, newest frame only
+Zones: Ghat A (22.7 100x100 px blocks), Ghat B (24.5 100x100 px blocks), Ghat C (22.7 100x100 px blocks); exits: Gate 1 -> Ghat A, Gate 2 -> Ghat B, Gate 3 -> Ghat C
+frame 1: waiting for first result fps=24.7
+frame 25: waiting for first result fps=24.6
+frame 50: people=967.1 zones[Ghat A=145p 6.40, Ghat B=263p 10.75, Ghat C=274p 12.07]/100px blk peak=63.69/100px blk level=HIGH decision=USE Gate 1 fps=24.2 age=1.95s
+frame 75: people=1010.1 zones[Ghat A=147p 6.48, Ghat B=266p 10.87, Ghat C=276p 12.14]/100px blk peak=63.83/100px blk level=HIGH decision=USE Gate 1 fps=46.4 age=1.29s
+frame 100: people=1010.1 zones[Ghat A=147p 6.48, Ghat B=266p 10.87, Ghat C=276p 12.14]/100px blk peak=63.83/100px blk level=HIGH decision=USE Gate 1 fps=24.7 age=2.28s
+frame 125: people=1024.5 zones[Ghat A=149p 6.56, Ghat B=268p 10.97, Ghat C=277p 12.20]/100px blk peak=63.96/100px blk level=HIGH decision=USE Gate 1 fps=24.1 age=2.12s
+frame 150: people=924.6 zones[Ghat A=158p 6.97, Ghat B=262p 10.72, Ghat C=263p 11.58]/100px blk peak=58.41/100px blk level=HIGH decision=USE Gate 1 fps=25.0 age=2.00s
+frame 175: people=864.7 zones[Ghat A=167p 7.34, Ghat B=257p 10.50, Ghat C=250p 11.02]/100px blk peak=53.45/100px blk level=HIGH decision=USE Gate 1 fps=24.8 age=1.76s
+frame 200: people=760.6 zones[Ghat A=155p 6.80, Ghat B=239p 9.78, Ghat C=235p 10.36]/100px blk peak=48.11/100px blk level=HIGH decision=USE Gate 1 fps=25.0 age=1.68s
+frame 225: people=686.2 zones[Ghat A=144p 6.32, Ghat B=223p 9.13, Ghat C=222p 9.77]/100px blk peak=43.30/100px blk level=HIGH decision=USE Gate 1 fps=25.0 age=1.64s
+frame 250: people=630.4 zones[Ghat A=134p 5.89, Ghat B=209p 8.55, Ghat C=210p 9.24]/100px blk peak=38.97/100px blk level=HIGH decision=USE Gate 1 fps=25.2 age=1.48s
+frame 275: people=637.8 zones[Ghat A=142p 6.27, Ghat B=212p 8.69, Ghat C=207p 9.12]/100px blk peak=35.30/100px blk level=HIGH decision=USE Gate 1 fps=13.2 age=1.36s
+frame 300: people=637.8 zones[Ghat A=142p 6.27, Ghat B=212p 8.69, Ghat C=207p 9.12]/100px blk peak=35.30/100px blk level=HIGH decision=USE Gate 1 fps=24.8 age=2.32s
+frame 325: people=643.7 zones[Ghat A=150p 6.62, Ghat B=216p 8.81, Ghat C=205p 9.02]/100px blk peak=32.05/100px blk level=HIGH decision=USE Gate 1 fps=25.3 age=2.04s
+frame 350: people=628.2 zones[Ghat A=145p 6.40, Ghat B=211p 8.63, Ghat C=198p 8.71]/100px blk peak=31.64/100px blk level=HIGH decision=USE Gate 1 fps=25.0 age=1.96s
+frame 375: people=604.0 zones[Ghat A=141p 6.21, Ghat B=207p 8.46, Ghat C=192p 8.44]/100px blk peak=31.30/100px blk level=HIGH decision=USE Gate 1 fps=25.4 age=1.92s
+frame 400: people=579.9 zones[Ghat A=137p 6.03, Ghat B=203p 8.31, Ghat C=186p 8.19]/100px blk peak=31.00/100px blk level=HIGH decision=USE Gate 1 fps=25.1 age=1.92s
+frame 425: people=567.1 zones[Ghat A=133p 5.84, Ghat B=194p 7.92, Ghat C=178p 7.83]/100px blk peak=28.55/100px blk level=HIGH decision=USE Gate 1 fps=24.8 age=1.88s
+frame 450: people=558.6 zones[Ghat A=130p 5.73, Ghat B=186p 7.62, Ghat C=172p 7.57]/100px blk peak=26.37/100px blk level=HIGH decision=USE Gate 1 fps=24.9 age=1.84s
+frame 475: people=588.7 zones[Ghat A=128p 5.64, Ghat B=180p 7.35, Ghat C=167p 7.33]/100px blk peak=24.42/100px blk level=HIGH decision=USE Gate 1 fps=24.8 age=1.76s
+frame 500: people=609.6 zones[Ghat A=125p 5.49, Ghat B=171p 6.98, Ghat C=157p 6.90]/100px blk peak=22.93/100px blk level=HIGH decision=USE Gate 1 fps=25.7 age=1.60s
+frame 525: people=630.5 zones[Ghat A=122p 5.36, Ghat B=163p 6.66, Ghat C=148p 6.52]/100px blk peak=21.61/100px blk level=HIGH decision=USE Gate 1 fps=25.3 age=1.48s
+frame 550: people=605.8 zones[Ghat A=119p 5.24, Ghat B=156p 6.37, Ghat C=140p 6.17]/100px blk peak=20.46/100px blk level=HIGH decision=USE Gate 1 fps=25.0 age=1.48s
+frame 575: people=576.2 zones[Ghat A=114p 5.01, Ghat B=148p 6.04, Ghat C=133p 5.86]/100px blk peak=19.66/100px blk level=HIGH decision=USE Gate 1 fps=25.7 age=1.36s
+frame 600: people=535.0 zones[Ghat A=109p 4.80, Ghat B=141p 5.75, Ghat C=127p 5.57]/100px blk peak=19.01/100px blk level=HIGH decision=USE Gate 1 fps=38.6 age=1.22s
+frame 625: people=535.0 zones[Ghat A=109p 4.80, Ghat B=141p 5.75, Ghat C=127p 5.57]/100px blk peak=19.01/100px blk level=HIGH decision=USE Gate 1 fps=25.2 age=2.20s
+frame 650: people=493.9 zones[Ghat A=105p 4.61, Ghat B=134p 5.48, Ghat C=121p 5.31]/100px blk peak=18.48/100px blk level=HIGH decision=USE Gate 1 fps=25.1 age=2.08s
+frame 675: people=599.5 zones[Ghat A=141p 6.20, Ghat B=179p 7.31, Ghat C=153p 6.76]/100px blk peak=17.65/100px blk level=HIGH decision=USE Gate 1 fps=24.7 age=2.00s
+frame 700: people=736.6 zones[Ghat A=173p 7.63, Ghat B=219p 8.96, Ghat C=183p 8.06]/100px blk peak=18.25/100px blk level=HIGH decision=USE Gate 1 fps=25.5 age=1.76s
+frame 725: people=713.7 zones[Ghat A=160p 7.03, Ghat B=205p 8.36, Ghat C=166p 7.32]/100px blk peak=20.27/100px blk level=HIGH decision=USE Gate 1 fps=25.4 age=1.68s
+frame 750: people=691.1 zones[Ghat A=148p 6.50, Ghat B=192p 7.83, Ghat C=151p 6.66]/100px blk peak=22.09/100px blk level=HIGH decision=USE Gate 1 fps=24.8 age=1.52s
+Saved heatmap: C:/Users/Parth/AppData/Local/Temp/claude/79ae64a12b103f87/75a1fc10-2dcd-49c9-ad6c-ae3b04524f72/scratchpad/heat_zones.png
+Processed 751 frames, peak count 1024.5, peak local density 63.96/100px blk
+Timing: 31.0 s, 26 model results (0.84/s), frame gaps median 40 ms, p99 83 ms, max 107 ms over 750 gaps, 723 frames dropped by the worker, 0 frames skipped by --realtime

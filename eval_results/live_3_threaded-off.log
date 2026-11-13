@@ -1,0 +1,8 @@
+Loading dmcount detector...
+Backend: openvino (f32)
+Inference: in the main loop
+frame 1: people=967.1 L=318 R=650 peak=63.69/100px blk level=HIGH decision=HOLD / BALANCED fps=0.7 age=1.35s
+frame 25: people=838.2 L=432 R=389 peak=24.43/100px blk level=HIGH decision=HOLD / BALANCED fps=0.8 age=1.20s
+Saved heatmap: C:/Users/Parth/AppData/Local/Temp/claude/79ae64a12b103f87/75a1fc10-2dcd-49c9-ad6c-ae3b04524f72/scratchpad/heat_live_3.png
+Processed 49 frames, peak count 1024.5, peak local density 63.96/100px blk
+Timing: 60.0 s, 49 model results (0.82/s), frame gaps median 1219 ms, p99 1243 ms, max 1248 ms over 48 gaps, 1421 frames skipped by --realtime

@@ -1,0 +1,4 @@
+Loading dmcount on torch, onnx, openvino, openvino-static, openvino-bf16...
+C:/.lwcc/weights/DM-Count_SHA.pth
+Built model DM-Count with weights SHA
+dmcount pass 1/2 partA: done (13:09:25)

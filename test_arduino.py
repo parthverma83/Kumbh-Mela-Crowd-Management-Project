@@ -1,3 +1,4 @@
+import os
 from inference import get_model
 import cv2
 import numpy as np
@@ -5,7 +6,7 @@ import serial
 import time
 
 # ---------------- SETTINGS ----------------
-API_KEY = "Ce92tZce5xzX69O9Kx7p"
+API_KEY = os.environ.get("ROBOFLOW_API_KEY", "")
 MODEL_ID = "crowd-detection-n30gw-isumb/2"
 
 CAM_INDEX = 1        # try 0/1/2

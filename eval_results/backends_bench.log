@@ -1,0 +1,15 @@
+Loading dmcount on torch, onnx, openvino, openvino-static, openvino-bf16...
+C:/.lwcc/weights/DM-Count_SHA.pth
+Built model DM-Count with weights SHA
+dmcount pass 1/2 partA: done (12:15:47)
+dmcount pass 1/2 camera720: done (12:19:28)
+dmcount pass 2/2 partA: done (12:22:24)
+dmcount pass 2/2 camera720: done (12:26:08)
+Loading csrnet on torch, onnx, openvino, openvino-static, openvino-bf16...
+C:/.lwcc/weights/CSRNet_SHA.pth
+Built model CSRNet with weights SHA
+csrnet pass 1/2 partA: done (12:29:14)
+csrnet pass 1/2 camera720: done (12:32:58)
+csrnet pass 2/2 partA: done (12:35:59)
+csrnet pass 2/2 camera720: done (12:39:37)
+Per-run results: eval_results\backends.csv

@@ -1,0 +1,4 @@
+Loading dmcount detector...
+Backend: openvino (f32)
+Inference: in the main loop
+frame 1: people=967.1 L=318 R=650 peak=63.69/100px blk level=HIGH decision=HOLD / BALANCED fps=0.8 age=1.25s

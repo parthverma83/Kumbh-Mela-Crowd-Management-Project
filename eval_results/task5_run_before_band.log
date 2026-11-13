@@ -1,0 +1,144 @@
+﻿Loading yolo detector...
+Assignment solver: built-in (lap not available)
+Inference: in the main loop
+Logging to eval_results/task5_run.db
+Zones: Street (31.5 100x100 px blocks), Pavement (36.6 100x100 px blocks); exits: none; lines: Pavement line (towards camera / away from camera)
+ALERT level: None -> MEDIUM (people 7.0)
+frame 1: people=7.0 zones[Street=2p 0.06, Pavement=4p 0.11]/100px blk peak=1.37/100px blk level=MEDIUM decision=HOLD / BALANCED fps=0.1 age=8.16s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> LEFT (Street 0.06, Pavement 0.13)
+frame 25: people=8.2 zones[Street=2p 0.06, Pavement=5p 0.15]/100px blk peak=1.45/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=8.1 age=0.10s
+frame 50: people=9.8 zones[Street=1p 0.04, Pavement=7p 0.18]/100px blk peak=2.18/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=5.7 age=0.11s
+CROSS Pavement line: towards camera (track 21) at 2.68s
+frame 75: people=7.4 zones[Street=2p 0.06, Pavement=5p 0.13]/100px blk peak=1.83/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=8.8 age=0.09s
+CROSS Pavement line: towards camera (track 58) at 3.44s
+CROSS Pavement line: towards camera (track 59) at 3.48s
+CROSS Pavement line: towards camera (track 17) at 3.56s
+CROSS Pavement line: towards camera (track 60) at 3.84s
+CROSS Pavement line: towards camera (track 54) at 3.92s
+frame 100: people=7.8 zones[Street=1p 0.04, Pavement=6p 0.16]/100px blk peak=2.33/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.6 age=0.10s
+frame 125: people=7.6 zones[Street=2p 0.06, Pavement=5p 0.13]/100px blk peak=1.37/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=8.8 age=0.09s
+frame 150: people=7.8 zones[Street=2p 0.07, Pavement=5p 0.13]/100px blk peak=1.35/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.8 age=0.10s
+ALERT decision: REDIRECT -> LEFT -> HOLD / BALANCED (Street 0.08, Pavement 0.12)
+frame 175: people=8.3 zones[Street=3p 0.11, Pavement=4p 0.10]/100px blk peak=1.36/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.5 age=0.11s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.12, Pavement 0.09)
+CROSS Pavement line: towards camera (track 73) at 7.88s
+frame 200: people=7.0 zones[Street=4p 0.12, Pavement=2p 0.07]/100px blk peak=1.36/100px blk level=MEDIUM decision=REDIRECT -> RIGHT fps=5.7 age=0.11s
+CROSS Pavement line: away from camera (track 74) at 8.20s
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.11, Pavement 0.06)
+CROSS Pavement line: towards camera (track 148) at 8.88s
+frame 225: people=5.8 zones[Street=2p 0.08, Pavement=2p 0.06]/100px blk peak=1.72/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.6 age=0.10s
+CROSS Pavement line: away from camera (track 148) at 9.52s
+frame 250: people=9.4 zones[Street=3p 0.08, Pavement=4p 0.10]/100px blk peak=2.31/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.9 age=0.10s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> LEFT (Street 0.09, Pavement 0.11)
+frame 275: people=7.3 zones[Street=2p 0.05, Pavement=4p 0.11]/100px blk peak=2.47/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.6 age=0.11s
+CROSS Pavement line: towards camera (track 164) at 11.04s
+ALERT decision: REDIRECT -> LEFT -> HOLD / BALANCED (Street 0.12, Pavement 0.11)
+frame 300: people=8.4 zones[Street=3p 0.11, Pavement=4p 0.10]/100px blk peak=1.66/100px blk level=MEDIUM decision=HOLD / BALANCED fps=5.9 age=0.10s
+frame 325: people=8.4 zones[Street=3p 0.09, Pavement=4p 0.12]/100px blk peak=1.39/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.3 age=0.11s
+CROSS Pavement line: away from camera (track 179) at 13.48s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> LEFT (Street 0.07, Pavement 0.14)
+frame 350: people=9.5 zones[Street=2p 0.07, Pavement=6p 0.16]/100px blk peak=1.95/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.6 age=0.10s
+CROSS Pavement line: away from camera (track 188) at 14.16s
+frame 375: people=8.0 zones[Street=1p 0.04, Pavement=5p 0.15]/100px blk peak=2.50/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.4 age=0.11s
+frame 400: people=8.4 zones[Street=2p 0.06, Pavement=5p 0.13]/100px blk peak=2.73/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=8.1 age=0.10s
+CROSS Pavement line: towards camera (track 204) at 16.96s
+frame 425: people=7.9 zones[Street=2p 0.08, Pavement=3p 0.10]/100px blk peak=2.42/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=6.2 age=0.14s
+CROSS Pavement line: away from camera (track 204) at 17.68s
+frame 450: people=6.2 zones[Street=2p 0.06, Pavement=3p 0.09]/100px blk peak=1.77/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=6.1 age=0.10s
+frame 475: people=6.6 zones[Street=2p 0.06, Pavement=3p 0.09]/100px blk peak=2.00/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.1 age=0.11s
+ALERT decision: REDIRECT -> LEFT -> HOLD / BALANCED (Street 0.06, Pavement 0.09)
+frame 500: people=5.9 zones[Street=2p 0.07, Pavement=3p 0.08]/100px blk peak=1.65/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.3 age=0.11s
+frame 525: people=5.5 zones[Street=2p 0.07, Pavement=2p 0.05]/100px blk peak=2.23/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.3 age=0.11s
+ALERT level: MEDIUM -> LOW (people 4.4)
+frame 550: people=4.1 zones[Street=2p 0.05, Pavement=1p 0.03]/100px blk peak=1.91/100px blk level=LOW decision=HOLD / BALANCED fps=7.2 age=0.12s
+ALERT level: LOW -> MEDIUM (people 5.2)
+frame 575: people=3.7 zones[Street=2p 0.07, Pavement=0p 0.01]/100px blk peak=2.01/100px blk level=MEDIUM decision=HOLD / BALANCED fps=5.9 age=0.11s
+frame 600: people=6.0 zones[Street=3p 0.10, Pavement=1p 0.04]/100px blk peak=2.03/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.5 age=0.11s
+frame 625: people=7.5 zones[Street=3p 0.11, Pavement=2p 0.04]/100px blk peak=2.47/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.6 age=0.11s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.12, Pavement 0.05)
+frame 650: people=7.1 zones[Street=4p 0.12, Pavement=2p 0.06]/100px blk peak=1.54/100px blk level=MEDIUM decision=REDIRECT -> RIGHT fps=6.0 age=0.10s
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.12, Pavement 0.12)
+CROSS Pavement line: away from camera (track 334) at 26.88s
+frame 675: people=9.3 zones[Street=4p 0.11, Pavement=5p 0.13]/100px blk peak=2.00/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.6 age=0.11s
+CROSS Pavement line: away from camera (track 300) at 27.12s
+frame 700: people=10.4 zones[Street=3p 0.09, Pavement=5p 0.13]/100px blk peak=1.86/100px blk level=MEDIUM decision=HOLD / BALANCED fps=6.0 age=0.11s
+CROSS Pavement line: away from camera (track 340) at 28.28s
+CROSS Pavement line: towards camera (track 340) at 28.32s
+ALERT level: MEDIUM -> HIGH (people 12.2)
+frame 725: people=9.3 zones[Street=5p 0.15, Pavement=3p 0.09]/100px blk peak=1.83/100px blk level=HIGH decision=HOLD / BALANCED fps=7.3 age=0.11s
+frame 750: people=12.6 zones[Street=5p 0.17, Pavement=6p 0.16]/100px blk peak=2.66/100px blk level=HIGH decision=HOLD / BALANCED fps=7.2 age=0.11s
+ALERT level: HIGH -> MEDIUM (people 10.7)
+frame 775: people=9.5 zones[Street=4p 0.12, Pavement=5p 0.14]/100px blk peak=2.48/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.0 age=0.12s
+frame 800: people=11.3 zones[Street=4p 0.13, Pavement=6p 0.16]/100px blk peak=2.52/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.6 age=0.11s
+ALERT level: MEDIUM -> HIGH (people 12.2)
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.17, Pavement 0.17)
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.18, Pavement 0.16)
+frame 825: people=10.7 zones[Street=5p 0.17, Pavement=5p 0.14]/100px blk peak=2.92/100px blk level=HIGH decision=HOLD / BALANCED fps=5.9 age=0.11s
+ALERT level: HIGH -> MEDIUM (people 10.0)
+frame 850: people=10.0 zones[Street=4p 0.13, Pavement=5p 0.14]/100px blk peak=2.46/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.5 age=0.11s
+frame 875: people=10.0 zones[Street=4p 0.13, Pavement=5p 0.14]/100px blk peak=2.49/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.7 age=0.11s
+frame 900: people=10.7 zones[Street=4p 0.13, Pavement=6p 0.16]/100px blk peak=3.29/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.5 age=0.11s
+CROSS Pavement line: away from camera (track 466) at 36.16s
+ALERT level: MEDIUM -> HIGH (people 12.1)
+frame 925: people=12.8 zones[Street=5p 0.15, Pavement=7p 0.18]/100px blk peak=2.52/100px blk level=HIGH decision=HOLD / BALANCED fps=7.4 age=0.11s
+CROSS Pavement line: away from camera (track 443) at 37.52s
+CROSS Pavement line: towards camera (track 443) at 37.56s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.22, Pavement 0.15)
+frame 950: people=13.7 zones[Street=7p 0.22, Pavement=6p 0.15]/100px blk peak=4.13/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=6.8 age=0.12s
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.18, Pavement 0.17)
+CROSS Pavement line: towards camera (track 757) at 38.88s
+frame 975: people=12.9 zones[Street=6p 0.18, Pavement=6p 0.17]/100px blk peak=2.79/100px blk level=HIGH decision=HOLD / BALANCED fps=7.3 age=0.11s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.18, Pavement 0.16)
+CROSS Pavement line: away from camera (track 667) at 39.48s
+frame 1000: people=12.3 zones[Street=6p 0.18, Pavement=6p 0.16]/100px blk peak=2.97/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=7.7 age=0.10s
+CROSS Pavement line: towards camera (track 647) at 40.32s
+frame 1025: people=13.8 zones[Street=6p 0.20, Pavement=6p 0.17]/100px blk peak=2.54/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=7.9 age=0.11s
+frame 1050: people=13.2 zones[Street=9p 0.30, Pavement=3p 0.07]/100px blk peak=2.86/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=7.7 age=0.10s
+frame 1075: people=14.0 zones[Street=11p 0.34, Pavement=2p 0.06]/100px blk peak=3.91/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=7.4 age=0.11s
+frame 1100: people=12.9 zones[Street=10p 0.32, Pavement=2p 0.06]/100px blk peak=3.34/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=7.1 age=0.12s
+frame 1125: people=13.3 zones[Street=8p 0.27, Pavement=3p 0.09]/100px blk peak=2.36/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=5.7 age=0.11s
+ALERT level: HIGH -> MEDIUM (people 10.7)
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.21, Pavement 0.10)
+frame 1150: people=10.7 zones[Street=6p 0.19, Pavement=4p 0.10]/100px blk peak=2.60/100px blk level=MEDIUM decision=HOLD / BALANCED fps=6.8 age=0.12s
+frame 1175: people=9.5 zones[Street=6p 0.18, Pavement=3p 0.09]/100px blk peak=2.79/100px blk level=MEDIUM decision=HOLD / BALANCED fps=6.9 age=0.12s
+frame 1200: people=10.8 zones[Street=6p 0.20, Pavement=4p 0.11]/100px blk peak=2.44/100px blk level=MEDIUM decision=HOLD / BALANCED fps=7.1 age=0.11s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.21, Pavement 0.11)
+ALERT level: MEDIUM -> HIGH (people 12.1)
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.18, Pavement 0.11)
+frame 1225: people=10.9 zones[Street=6p 0.18, Pavement=4p 0.12]/100px blk peak=2.51/100px blk level=HIGH decision=HOLD / BALANCED fps=5.6 age=0.12s
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.20, Pavement 0.12)
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.20, Pavement 0.13)
+frame 1250: people=13.1 zones[Street=6p 0.20, Pavement=5p 0.13]/100px blk peak=2.63/100px blk level=HIGH decision=HOLD / BALANCED fps=7.0 age=0.11s
+frame 1275: people=14.8 zones[Street=6p 0.18, Pavement=7p 0.18]/100px blk peak=2.50/100px blk level=HIGH decision=HOLD / BALANCED fps=5.9 age=0.11s
+frame 1300: people=11.8 zones[Street=5p 0.15, Pavement=6p 0.17]/100px blk peak=2.71/100px blk level=HIGH decision=HOLD / BALANCED fps=7.5 age=0.11s
+ALERT level: HIGH -> MEDIUM (people 10.8)
+ALERT decision: HOLD / BALANCED -> REDIRECT -> RIGHT (Street 0.12, Pavement 0.18)
+ALERT level: MEDIUM -> HIGH (people 12.0)
+frame 1325: people=11.4 zones[Street=3p 0.09, Pavement=6p 0.18]/100px blk peak=2.33/100px blk level=HIGH decision=REDIRECT -> RIGHT fps=7.2 age=0.11s
+CROSS Pavement line: towards camera (track 1002) at 53.00s
+ALERT decision: REDIRECT -> RIGHT -> HOLD / BALANCED (Street 0.08, Pavement 0.16)
+CROSS Pavement line: towards camera (track 990) at 53.48s
+frame 1350: people=9.0 zones[Street=2p 0.06, Pavement=6p 0.16]/100px blk peak=1.69/100px blk level=HIGH decision=HOLD / BALANCED fps=7.3 age=0.11s
+CROSS Pavement line: away from camera (track 1080) at 54.12s
+ALERT level: HIGH -> MEDIUM (people 9.2)
+ALERT decision: HOLD / BALANCED -> REDIRECT -> LEFT (Street 0.08, Pavement 0.15)
+CROSS Pavement line: towards camera (track 1080) at 54.56s
+ALERT level: MEDIUM -> HIGH (people 12.2)
+frame 1375: people=12.2 zones[Street=3p 0.10, Pavement=6p 0.17]/100px blk peak=2.20/100px blk level=HIGH decision=REDIRECT -> LEFT fps=7.6 age=0.10s
+CROSS Pavement line: away from camera (track 1101) at 55.32s
+CROSS Pavement line: towards camera (track 1237) at 55.36s
+ALERT decision: REDIRECT -> LEFT -> HOLD / BALANCED (Street 0.16, Pavement 0.17)
+frame 1400: people=12.9 zones[Street=5p 0.17, Pavement=6p 0.18]/100px blk peak=2.41/100px blk level=HIGH decision=HOLD / BALANCED fps=7.6 age=0.10s
+CROSS Pavement line: towards camera (track 970) at 56.20s
+frame 1425: people=11.3 zones[Street=6p 0.18, Pavement=5p 0.14]/100px blk peak=2.70/100px blk level=HIGH decision=HOLD / BALANCED fps=7.4 age=0.11s
+ALERT level: HIGH -> MEDIUM (people 10.8)
+ALERT decision: HOLD / BALANCED -> REDIRECT -> LEFT (Street 0.13, Pavement 0.14)
+frame 1450: people=10.3 zones[Street=3p 0.08, Pavement=6p 0.16]/100px blk peak=2.70/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=7.1 age=0.11s
+frame 1475: people=9.7 zones[Street=1p 0.04, Pavement=6p 0.15]/100px blk peak=2.74/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=6.7 age=0.12s
+frame 1500: people=9.8 zones[Street=1p 0.03, Pavement=4p 0.11]/100px blk peak=4.36/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=5.4 age=0.12s
+frame 1525: people=11.6 zones[Street=3p 0.09, Pavement=4p 0.10]/100px blk peak=4.13/100px blk level=MEDIUM decision=REDIRECT -> LEFT fps=6.7 age=0.12s
+ALERT level: MEDIUM -> HIGH (people 12.2)
+frame 1550: people=10.9 zones[Street=2p 0.07, Pavement=6p 0.16]/100px blk peak=2.85/100px blk level=HIGH decision=REDIRECT -> LEFT fps=7.9 age=0.10s
+Processed 1572 frames, peak count 14.9, peak local density 5.02/100px blk
+Crossings Pavement line: towards camera 19, away from camera 13
+Timing: 229.1 s, 1572 model results (6.86/s), frame gaps median 136 ms, p99 191 ms, max 1032 ms over 1571 gaps

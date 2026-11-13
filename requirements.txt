@@ -1,0 +1,12 @@
+opencv-python
+numpy
+ultralytics
+lwcc          # csrnet / dmcount detectors
+scipy         # evaluate.py reads the .mat labels
+pyserial      # only for --serial (Arduino)
+streamlit     # dashboard.py (brings altair and pandas)
+pytest        # tests
+# inference   # only for --detector roboflow
+# onnx onnxscript openvino   # only for benchmark_backends.py export and --backend openvino (speed-up varies, see README)
+# onnxruntime                # only for --backend onnx
+# lap                        # optional for --flow (ByteTrack); a built-in stand-in is used without it

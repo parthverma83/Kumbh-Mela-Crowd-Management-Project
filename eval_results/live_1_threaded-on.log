@@ -1,0 +1,66 @@
+Loading dmcount detector...
+Backend: openvino (f32)
+Inference: background thread, newest frame only
+frame 1: waiting for first result fps=10.7
+frame 25: waiting for first result fps=24.9
+frame 50: people=967.1 L=318 R=650 peak=63.69/100px blk level=HIGH decision=HOLD / BALANCED fps=25.2 age=2.00s
+frame 75: people=1010.1 L=321 R=654 peak=63.83/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.0 age=1.68s
+frame 100: people=1024.5 L=325 R=659 peak=63.96/100px blk level=HIGH decision=REDIRECT -> LEFT fps=20.4 age=1.45s
+frame 125: people=1024.5 L=325 R=659 peak=63.96/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.6 age=2.44s
+frame 150: people=924.6 L=330 R=617 peak=58.41/100px blk level=HIGH decision=REDIRECT -> LEFT fps=24.9 age=2.16s
+frame 175: people=864.7 L=335 R=580 peak=53.45/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.7 age=1.92s
+frame 200: people=760.6 L=311 R=537 peak=48.11/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.0 age=1.64s
+frame 225: people=686.2 L=288 R=499 peak=43.30/100px blk level=HIGH decision=REDIRECT -> LEFT fps=26.0 age=1.40s
+frame 250: people=686.2 L=288 R=499 peak=43.30/100px blk level=HIGH decision=REDIRECT -> LEFT fps=24.7 age=2.40s
+frame 275: people=630.4 L=268 R=464 peak=38.97/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.3 age=2.16s
+frame 300: people=637.8 L=279 R=450 peak=35.30/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.2 age=1.88s
+frame 325: people=643.7 L=289 R=437 peak=32.05/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.4 age=1.64s
+frame 350: people=628.2 L=299 R=435 peak=31.64/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.4 age=1.40s
+frame 375: people=628.2 L=299 R=435 peak=31.64/100px blk level=HIGH decision=REDIRECT -> LEFT fps=25.1 age=2.40s
+frame 400: people=604.1 L=309 R=433 peak=31.30/100px blk level=HIGH decision=REDIRECT -> LEFT fps=24.2 age=2.16s
+frame 425: people=548.4 L=304 R=413 peak=28.81/100px blk level=HIGH decision=REDIRECT -> LEFT fps=26.0 age=1.88s
+frame 450: people=540.0 L=302 R=398 peak=26.59/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=1.64s
+frame 475: people=531.5 L=300 R=384 peak=24.61/100px blk level=HIGH decision=HOLD / BALANCED fps=25.8 age=1.40s
+frame 500: people=531.5 L=300 R=384 peak=24.61/100px blk level=HIGH decision=HOLD / BALANCED fps=25.1 age=2.40s
+frame 525: people=552.5 L=294 R=366 peak=23.08/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=2.12s
+frame 550: people=573.4 L=289 R=351 peak=21.74/100px blk level=HIGH decision=HOLD / BALANCED fps=24.7 age=1.88s
+frame 575: people=589.4 L=281 R=335 peak=20.75/100px blk level=HIGH decision=HOLD / BALANCED fps=24.6 age=1.64s
+frame 600: people=559.8 L=273 R=321 peak=19.93/100px blk level=HIGH decision=HOLD / BALANCED fps=26.1 age=1.40s
+frame 625: people=559.8 L=273 R=321 peak=19.93/100px blk level=HIGH decision=HOLD / BALANCED fps=26.1 age=2.40s
+frame 650: people=530.1 L=267 R=308 peak=19.26/100px blk level=HIGH decision=HOLD / BALANCED fps=25.1 age=2.12s
+frame 675: people=635.7 L=341 R=363 peak=18.31/100px blk level=HIGH decision=HOLD / BALANCED fps=25.4 age=1.88s
+frame 700: people=741.3 L=407 R=413 peak=18.48/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=1.64s
+frame 725: people=723.1 L=392 R=378 peak=19.83/100px blk level=HIGH decision=HOLD / BALANCED fps=41.9 age=1.36s
+frame 750: people=723.1 L=392 R=378 peak=19.83/100px blk level=HIGH decision=HOLD / BALANCED fps=25.1 age=2.36s
+frame 775: people=700.6 L=378 R=346 peak=21.68/100px blk level=HIGH decision=HOLD / BALANCED fps=25.6 age=2.08s
+frame 800: people=677.1 L=354 R=328 peak=20.06/100px blk level=HIGH decision=HOLD / BALANCED fps=24.4 age=1.84s
+frame 825: people=662.7 L=333 R=312 peak=18.61/100px blk level=HIGH decision=HOLD / BALANCED fps=25.2 age=1.60s
+frame 850: people=648.4 L=313 R=297 peak=17.30/100px blk level=HIGH decision=HOLD / BALANCED fps=56.9 age=1.33s
+frame 875: people=648.4 L=313 R=297 peak=17.30/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=2.32s
+frame 900: people=678.1 L=317 R=302 peak=15.57/100px blk level=HIGH decision=HOLD / BALANCED fps=24.7 age=2.08s
+frame 925: people=707.7 L=320 R=307 peak=19.34/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=1.80s
+frame 950: people=706.8 L=307 R=296 peak=17.79/100px blk level=HIGH decision=HOLD / BALANCED fps=25.3 age=1.52s
+frame 975: people=559.1 L=296 R=287 peak=16.49/100px blk level=HIGH decision=HOLD / BALANCED fps=17.8 age=1.30s
+frame 1000: people=559.1 L=296 R=287 peak=16.49/100px blk level=HIGH decision=HOLD / BALANCED fps=24.7 age=2.28s
+frame 1025: people=414.4 L=285 R=282 peak=16.21/100px blk level=HIGH decision=HOLD / BALANCED fps=25.5 age=2.04s
+frame 1050: people=425.2 L=275 R=277 peak=16.11/100px blk level=HIGH decision=HOLD / BALANCED fps=25.3 age=1.68s
+frame 1075: people=436.1 L=266 R=273 peak=16.47/100px blk level=HIGH decision=HOLD / BALANCED fps=24.8 age=1.44s
+frame 1100: people=436.1 L=266 R=273 peak=16.47/100px blk level=HIGH decision=HOLD / BALANCED fps=24.8 age=2.44s
+frame 1125: people=454.8 L=261 R=273 peak=15.78/100px blk level=HIGH decision=HOLD / BALANCED fps=24.4 age=2.20s
+frame 1150: people=473.5 L=256 R=274 peak=15.46/100px blk level=HIGH decision=HOLD / BALANCED fps=25.1 age=1.92s
+frame 1175: people=568.5 L=280 R=323 peak=15.82/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=1.68s
+frame 1200: people=624.4 L=301 R=367 peak=16.21/100px blk level=HIGH decision=HOLD / BALANCED fps=22.0 age=1.45s
+frame 1225: people=624.4 L=301 R=367 peak=16.21/100px blk level=HIGH decision=HOLD / BALANCED fps=25.0 age=2.44s
+frame 1250: people=680.3 L=320 R=407 peak=20.73/100px blk level=HIGH decision=HOLD / BALANCED fps=24.9 age=2.20s
+frame 1275: people=658.4 L=295 R=376 peak=19.34/100px blk level=HIGH decision=HOLD / BALANCED fps=24.9 age=1.92s
+frame 1300: people=636.4 L=273 R=349 peak=18.08/100px blk level=HIGH decision=HOLD / BALANCED fps=24.9 age=1.64s
+frame 1325: people=614.2 L=254 R=325 peak=16.31/100px blk level=HIGH decision=HOLD / BALANCED fps=20.7 age=1.41s
+frame 1350: people=614.2 L=254 R=325 peak=16.31/100px blk level=HIGH decision=HOLD / BALANCED fps=25.4 age=2.40s
+frame 1375: people=591.7 L=238 R=303 peak=14.71/100px blk level=HIGH decision=HOLD / BALANCED fps=25.8 age=2.16s
+frame 1400: people=575.4 L=229 R=284 peak=14.03/100px blk level=HIGH decision=HOLD / BALANCED fps=25.1 age=1.92s
+frame 1425: people=552.2 L=220 R=268 peak=13.44/100px blk level=HIGH decision=HOLD / BALANCED fps=25.1 age=1.68s
+frame 1450: people=529.0 L=213 R=252 peak=12.94/100px blk level=HIGH decision=HOLD / BALANCED fps=25.9 age=1.40s
+frame 1475: people=529.0 L=213 R=252 peak=12.94/100px blk level=HIGH decision=HOLD / BALANCED fps=25.2 age=2.40s
+Saved heatmap: C:/Users/Parth/AppData/Local/Temp/claude/79ae64a12b103f87/75a1fc10-2dcd-49c9-ad6c-ae3b04524f72/scratchpad/heat_live_1.png
+Processed 1497 frames, peak count 1024.5, peak local density 63.96/100px blk
+Timing: 60.5 s, 47 model results (0.78/s), frame gaps median 40 ms, p99 69 ms, max 97 ms over 1496 gaps, 1448 frames dropped by the worker, 3 frames skipped by --realtime

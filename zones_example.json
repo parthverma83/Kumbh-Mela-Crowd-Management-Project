@@ -1,0 +1,14 @@
+{
+  "notes": "Example only: three side-by-side zones on a 1280x720 frame. Draw each polygon where standing people's heads appear (head height), like the calibration points. Points are rescaled if the video has a different size. Each exit names the zone a crowd must cross to reach it.",
+  "frame_size": [1280, 720],
+  "zones": [
+    {"name": "Ghat A", "polygon": [[20, 120], [420, 120], [400, 700], [20, 700]]},
+    {"name": "Ghat B", "polygon": [[440, 120], [840, 120], [860, 700], [420, 700]]},
+    {"name": "Ghat C", "polygon": [[860, 120], [1260, 120], [1260, 700], [880, 700]]}
+  ],
+  "exits": [
+    {"name": "Gate 1", "zone": "Ghat A"},
+    {"name": "Gate 2", "zone": "Ghat B"},
+    {"name": "Gate 3", "zone": "Ghat C"}
+  ]
+}

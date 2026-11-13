@@ -1,9 +1,19 @@
+"""Early prototype: YOLO person heatmap over a whole video file (crowd_monitor.py replaces it).
+
+    python camera_index_test.py path/to/video.mp4
+"""
+import sys
+
 import cv2
 import numpy as np
 from ultralytics import YOLO
 
-video_path = ""C:\Users\vicky\Downloads\14422586_1920_1080_25fps.mp4""
+if len(sys.argv) != 2:
+    sys.exit("usage: python camera_index_test.py VIDEO")
+video_path = sys.argv[1]
 cap = cv2.VideoCapture(video_path)
+if not cap.isOpened():
+    sys.exit(f"can't open {video_path}")
 
 model = YOLO("yolov8n.pt")  # lightweight and fast
 

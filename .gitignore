@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.pt
+*.mp4
+.env
+exported_models/
+test_media/
+*.db-wal
+*.db-shm
+.claude/
