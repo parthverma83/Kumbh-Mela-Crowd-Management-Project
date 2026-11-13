@@ -8,3 +8,4 @@ test_media/
 *.db-wal
 *.db-shm
 .claude/
+crowd_density_heatmap.png
