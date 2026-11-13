@@ -232,6 +232,47 @@ def test_app_renders_the_latest_run(tmp_path, monkeypatch):
     assert any("Line crossings" in s.value for s in at.subheader)
 
 
+def test_save_upload_writes_a_readable_log_once(tmp_path):
+    src = tmp_path / "run.db"
+    write_two_runs(src)
+    data = src.read_bytes()
+    a = dash.save_upload(data, tmp_path / "up")
+    b = dash.save_upload(data, tmp_path / "up")
+    assert a == b and len(list((tmp_path / "up").iterdir())) == 1
+    con = dash.open_log(a)
+    assert list(dash.runs(con).run) == [1, 2]
+    con.close()
+
+
+def test_sample_logs_are_readable_without_a_wal_file():
+    """The hosted demo reads these; rollback-journal mode means no -wal/-shm file is needed."""
+    for path in dash.SAMPLE_LOGS.values():
+        assert path.is_file(), path
+        con = dash.open_log(path)
+        assert con.execute("PRAGMA journal_mode").fetchone()[0] == "delete"
+        assert not dash.runs(con).empty
+        con.close()
+
+
+def test_hosted_entry_point_demo_mode(monkeypatch):
+    from streamlit.testing.v1 import AppTest
+    monkeypatch.delenv("CROWD_LOG_DB", raising=False)
+    monkeypatch.setenv("CROWD_DASHBOARD_DEMO", "1")
+    monkeypatch.setenv("CROWD_LOG_REFRESH", "0")
+    at = AppTest.from_file(str(ROOT / "app" / "streamlit_app.py"), default_timeout=60)
+    at.run()
+    assert not at.exception
+    assert "not live or Kumbh data" in at.info[0].value
+    assert not at.sidebar.text_input    # no server paths in the hosted demo
+    sample = at.sidebar.selectbox[0]
+    for i in range(len(sample.options)):
+        at.sidebar.selectbox[0].select_index(i).run()
+        assert not at.exception and at.metric, sample.options[i]
+    at.sidebar.radio[0].set_value("Upload a log").run()
+    assert not at.exception
+    assert any("Upload a log" in c.value for c in at.caption)
+
+
 def test_app_reports_a_missing_log(tmp_path, monkeypatch):
     at = run_app(tmp_path / "nope.db", monkeypatch)
     assert not at.exception

@@ -13,21 +13,34 @@ exist yet (the dashboard was started first), the page retries on the same period
 A log can hold several runs: each run of crowd_monitor.py writes a "start" alert first, so the
 dashboard splits the log at those rows and shows the latest run unless you pick another.
 
+Hosted demo (CROWD_DASHBOARD_DEMO=1, set by app/streamlit_app.py): instead of a path on the server,
+the sidebar offers the recorded sample logs in eval_results/ and an upload box for a log of your own.
+
 The query functions take an sqlite3 connection and return plain values or pandas DataFrames, so
 they are tested without Streamlit (tests/test_dashboard.py).
 """
 import argparse
+import hashlib
 import math
 import os
 import sqlite3
 import sys
+import tempfile
 import time
 from contextlib import closing
 from pathlib import Path
 
 import pandas as pd
 
+ROOT = Path(__file__).resolve().parent
 DEFAULT_DB = "crowd_log.db"
+# Recorded runs shipped with the repository, offered by the hosted demo.
+SAMPLE_LOGS = {
+    "Street CCTV, 63 s, with --flow line crossings": ROOT / "eval_results" / "task5_run.db",
+    "Street CCTV, 60 s, played at real-time pace": ROOT / "eval_results" / "task6_live.db",
+    "ShanghaiTech Part A slideshow, YOLO then DM-Count": ROOT / "eval_results" / "task4_run.db",
+}
+UPLOAD_DIR = Path(tempfile.gettempdir()) / "crowd_dashboard_uploads"
 REFRESH_SECONDS = 2.0   # auto-refresh period; 0 turns it off
 WINDOWS = {"Last minute": 60, "Last 5 minutes": 300, "Last 15 minutes": 900,
            "Last hour": 3600, "Whole run": None}
@@ -52,6 +65,17 @@ def open_log(path):
     if not p.is_file():
         raise FileNotFoundError(f"no log at {p.resolve()}")
     return sqlite3.connect(p.resolve().as_uri() + "?mode=ro", uri=True, check_same_thread=False)
+
+
+def save_upload(data, folder=UPLOAD_DIR):
+    """Write an uploaded log to a file named by its hash, so open_log can read it like any other
+    (SQLite needs a file). Identical uploads share one file."""
+    folder = Path(folder)
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / (hashlib.sha256(data).hexdigest()[:20] + ".db")
+    if not path.exists():
+        path.write_bytes(data)
+    return path
 
 
 def tables(db):
@@ -298,14 +322,33 @@ def app():
     args = parse_args(sys.argv[1:])
     st.set_page_config(page_title="Crowd monitor", page_icon=":material/groups:", layout="wide")
 
+    demo = os.environ.get("CROWD_DASHBOARD_DEMO") == "1"
     with st.sidebar:
         st.header("Log")
-        path = st.text_input("Database", value=args.db,
-                             help="SQLite file written by crowd_monitor.py --log")
+        if demo:
+            # No free-text path on a public server: bundled samples or an uploaded file only.
+            mode = st.radio("Show", ["Sample run", "Upload a log"], horizontal=True)
+            if mode == "Sample run":
+                path = SAMPLE_LOGS[st.selectbox("Sample", list(SAMPLE_LOGS))]
+            else:
+                up = st.file_uploader("Log from `crowd_monitor.py --log run.db`",
+                                      type=["db", "sqlite", "sqlite3"])
+                path = save_upload(up.getvalue()) if up is not None else None
+        else:
+            path = st.text_input("Database", value=args.db,
+                                 help="SQLite file written by crowd_monitor.py --log")
         refresh = st.number_input("Refresh every (s, 0 = off)", min_value=0.0, max_value=600.0,
                                   value=float(args.refresh), step=1.0, format="%g")
         window_name = st.selectbox("Charts show", list(WINDOWS),
                                    index=list(WINDOWS).index(DEFAULT_WINDOW))
+    if demo:
+        st.info("Demo: recorded runs of `crowd_monitor.py` on test videos (a street CCTV clip and "
+                "ShanghaiTech images), not live or Kumbh data. Run the monitor with `--log` and "
+                "upload the file in the sidebar to see your own.", icon=":material/info:")
+        if path is None:
+            st.title("Crowd monitor")
+            st.caption("Upload a log in the sidebar.")
+            return
     # The log is opened for each read and closed straight after. A connection held between
     # refreshes stops the writer folding its WAL file back into the database when it exits, and
     # on Windows it stops the log being moved or deleted.
@@ -422,8 +465,10 @@ def app():
                          hide_index=True, width="stretch",
                          column_config={"Time": st.column_config.DatetimeColumn(
                              format="YYYY-MM-DD HH:mm:ss")})
+        # times are the dashboard server's local time, which is UTC on most hosts
         st.caption(f"Read {time.strftime('%H:%M:%S')}"
-                   + (f", refreshing every {refresh:g} s" if refresh > 0 else ", auto-refresh off"))
+                   + (f", refreshing every {refresh:g} s" if refresh > 0 else ", auto-refresh off")
+                   + f". Times are {time.strftime('%Z')}.")
 
     body()
 

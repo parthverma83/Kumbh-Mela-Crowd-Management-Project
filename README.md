@@ -290,8 +290,32 @@ It shows:
 - Times are in the dashboard machine's local time.
 - Zone levels aren't logged, only each zone's people and density, so the level shown is the overall one.
 
+#### Hosted demo
+
+[`app/streamlit_app.py`](app/streamlit_app.py) runs the same dashboard in demo mode, for hosting.
+Instead of a file path on the server, visitors pick one of the recorded runs in `eval_results/` or upload
+a log of their own (`crowd_monitor.py --log run.db`).
+- **Short install:** [`app/requirements.txt`](app/requirements.txt) lists only Streamlit, Altair and
+  pandas, so the host doesn't install PyTorch or OpenCV.
+- **Nothing runs a model:** no camera or video is opened, and the recorded runs are labelled as test
+  videos, not live or Kumbh data.
+- **Uploads:** an uploaded file is saved in the server's temp folder under a hash of its contents. It
+  stays there until the app restarts, and anyone who uploads an identical file gets the same copy. Don't
+  upload logs you wouldn't share.
+
+**Deploy on Streamlit Community Cloud (free):**
+1. Sign in at [share.streamlit.io](https://share.streamlit.io) with GitHub.
+2. Choose **Create app**, then deploy from GitHub with:
+   - repository `parthverma83/Kumbh-Mela-Crowd-Management-Project`;
+   - branch `main`;
+   - main file `app/streamlit_app.py`.
+3. Choose a subdomain, for example `kumbh-crowd-monitor`, which gives the address
+   `https://kumbh-crowd-monitor.streamlit.app`.
+
+**Try it locally:** `streamlit run app/streamlit_app.py`.
+
 **Checked:**
-- **Tests:** `tests/test_dashboard.py` (16 tests) covers the query functions on logs written by
+- **Tests:** `tests/test_dashboard.py` (19 tests) covers the query functions on logs written by
   `CrowdLog`, plus the whole page through Streamlit's `AppTest`.
 - **Real logs:** the page rendered without errors on both real logs, `eval_results/task4_run.db` (two runs)
   and `eval_results/task5_run.db`. It showed the same crossing totals as the monitor's own summary
